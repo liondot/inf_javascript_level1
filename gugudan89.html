@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구구단 8, 9</title>
+</head>
+
+<body>
+
+  <h1>구구단 숫자를 입력하시오 </h1>
+  <div>출력할 단수 : <input type="number" id="num">
+    <button onclick="number()">확인</button></div>
+  <hr>
+  <h2 class="result"></h2>
+  <p class="userInter"></p>
+
+  <script>
+    // 사용자가 입력한 숫자 값에 해당하는 단을 출력 
+    // 사용자가 2 이상 9이하가 아닌 앖을 입력할 경우 "2이상 9이하의 값만 입력 할 수 있습니다. 메시지 출력 "
+    // 콘솔 버전, 웹 버전 두 가지로 
+
+    function number() {
+      let num = document.querySelector('#num')
+      let numValue = num.value;
+      let userInter = document.querySelector('.userInter');
+      let result = document.querySelector('.result');
+
+
+      for (let i = 1; i <= 9; i++) {
+        
+        if (numValue == '') {
+          console.log("숫자를 입력하시오 ")
+          result.textContent = ""
+          alert("숫자를 입력하시오")
+          return
+        } else if (numValue < 2 || numValue > 9) {
+          console.log("2이상 9이하의 값만 입력 할 수 있습니다")
+          result.textContent = ""
+          alert("2이상 9이하의 값만 입력 할 수 있습니다");
+          num.value = ''
+          return
+        } else {
+          console.log(numValue + " * " + i + " = " + numValue * i)
+          // result.textContent = "입력하신 `${numValue}`단 입니다."
+          userInter.textContent = numValue + " * " + i + " = " + numValue * i 
+        }
+      }
+
+      
+    }
+
+  </script>
+</body>
+
+</html>

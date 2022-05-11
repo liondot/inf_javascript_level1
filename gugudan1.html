@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코드스쿼드 마스터즈 코드 레벨1</title>
+</head>
+
+<body>
+  <h1>2단과 3단 구현</h1>
+  <h1>4단과 5단 구현</h1>
+
+  <script>
+    // 1. 구구단 2단과 3단을 계산하고 화면에 출력한다. 
+    // 2. 2단은 2곱하기 1계산후 계산 값을 출력, 2곱하기 2계산 후 계산 값을 출력... 2곱하기 9까지 반복. 3단은 같은 과정을 반복 
+    // 3. 프로그램1: 처음엔 콘솔에 출력하는 프로그램을 작성 
+    // 4. 두번째는 html화면에 출력하는 프로그램을 작성 
+    // 각 프로그램 작성 후 커밋을 한다. 
+
+
+    // 구구단에서 4단과 5단을 계산한 결과 값을 변수에 자장한 후 저장한 변수 값을 출력한다. 
+    // 4와 5는 결정하면 바뀌지 않는 값이다. 따라서 4단과 5단에 해당하는 상수 값으로 만든 후 프로그램을 구현
+    // 예를 들어 4단은 4곱하기 1계산 결과 값을 i라는 변수에 저장하고, i라는 변수에 저장한 결과 값을 출력한다. 
+    // 사용자가 입력한 숫자 값에 해당하는 단을 출력한다. 
+    // 예를 들어 사용자가 4라는 숫자를 입력하면 4단 전체를 계산해 출력한다.
+    // 콘솔 버전과 웹버전 두개를 작성한다. 
+
+    // hint : 다음과 같은 변수에 값을 저장하고 출력한다.
+    // var result; 
+    // result = 4 * 1
+    // console.log(result)
+
+    const a = 4;
+    const b = 5;
+    let c = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+   
+      console.log(a + " * 1 = " + a * 1)
+      console.log(a + " * 2 = " + a * 2)
+      console.log(a + " * 3 = " + a * 3)
+      console.log(a + " * 4 = " + a * 4)
+      console.log(a + " * 5 = " + a * 5)
+      console.log(a + " * 6 = " + a * 6)
+      console.log(a + " * 7 = " + a * 7)
+      console.log(a + " * 8 = " + a * 8)
+      console.log(a + " * 9 = " + a * 9)
+
+      console.log(b + " * 1 = " + b * 1)
+      console.log(b + " * 2 = " + b * 2)
+      console.log(b + " * 3 = " + b * 3)
+      console.log(b + " * 4 = " + b * 4)
+      console.log(b + " * 5 = " + b * 5)
+      console.log(b + " * 6 = " + b * 6)
+      console.log(b + " * 7 = " + b * 7)
+      console.log(b + " * 8 = " + b * 8)
+      console.log(b + " * 9 = " + b * 9)
+
+      // 구구단 x단 구현 
+      let strN = prompt("몇 단을 출력할까요?");
+
+      let n = Number(strN);
+      console.log(n + " * 1 = " + n * 1);
+      console.log(n + " * 2 = " + n * 2);
+      console.log(n + " * 3 = " + n * 3);
+      console.log(n + " * 4 = " + n * 4);
+      console.log(n + " * 5 = " + n * 5);
+      console.log(n + " * 6 = " + n * 6);
+      console.log(n + " * 7 = " + n * 7);
+      console.log(n + " * 8 = " + n * 8);
+      console.log(n + " * 9 = " + n * 9);
+
+      document.write(n + " * 1 = " + n * 1 + "<br>"); 
+      document.write(n + " * 2 = " + n * 2 + "<br>");
+      document.write(n + " * 3 = " + n * 3 + "<br>");
+      document.write(n + " * 4 = " + n * 4 + "<br>");
+      document.write(n + " * 5 = " + n * 5 + "<br>");
+      document.write(n + " * 6 = " + n * 6 + "<br>");
+      document.write(n + " * 7 = " + n * 7 + "<br>");
+      document.write(n + " * 8 = " + n * 8 + "<br>");
+      document.write(n + " * 9 = " + n * 9 + "<br>");
+
+ 
+  </script>
+</body>
+
+</html>
