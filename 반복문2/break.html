@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브레이크는 반복문을 빠져나간다.</title>
+</head>
+<body>
+  <script>
+    // break와 continue 
+    // let str; 
+    // while (true) {
+    //   str = prompt("아무거나 입력하세요");
+    //   document.write(str + "<br>");
+    //   if(str == "Q") {
+    //     break;
+    //   }
+    // }
+    // document.write("bye")
+
+    // 아래 코드의 실행 결과를 예측해 보세요 
+    // for(var i = 0; i < 10; i ++) {
+    //   if(i == 5) {
+    //     break
+    //   }
+    //   console.log(i)
+    // }
+
+    for(let i = 0; i < 10; i++){
+      if(i == 5) {
+        continue;
+      }
+      console.log(i)
+    }
+
+    // 이중루프 
+    // for(let i = 0; i <2; i++){
+    //   for(var j = 0; j <3; j++){
+    //     console.log(i + "," + j);
+    //   }
+    // }
+
+    // 생각해 보기) 이중 루프 중간에 한꺼번에 빠져나갈 수 있을까요?
+    for(let i = 0; i < 3; i++){
+      for(let j = 0; j < 5; j++){
+        console.log("i= " + i+ ", j=" +j);
+        if( j == 2) {
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

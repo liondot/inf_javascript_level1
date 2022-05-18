@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구구단 전체 출력</title>
+  <!-- <script src="main.js"></script> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>구구단 전체 출력</h1>
+  <script>
+    var results = [];
+  for(var n = 2; n <= 9; n++) {    
+    // calculate 
+    for(var i = 1; i <= 9; i++) {
+      results[i] = n * i;
+    }
+
+    // print 
+    for(var i = 1; i <= 9; i++) {
+      var str = "";
+      str += n;
+      str += "x"
+      str += i;
+      str += "="
+      str += results[i];
+      str += "<br>";
+      document.write(str);
+    }
+  }
+
+  </script>
+</body>
+</html>

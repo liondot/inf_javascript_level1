@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체의 기초</title>
+</head>
+<body>
+  <script>
+    // 객체의 기초 
+    // this 키워드 
+    let p2 = {}
+    p2.name = "crong";
+    p2.weight = 80;
+    p2.eat = function(food){
+      console.log(this.name + " 이 " + food + " 를 먹었습니다.");
+      p2.weight += 1;
+    };
+
+    p2.eat("치킨");
+    console.log(p2)
+
+    let m1 = {
+      "name" : "Honux",
+      "hp" : 100,
+      "power" : 10,
+      "attact" : function(target) {
+        target.hp -= this.power
+      }
+
+    }
+
+    let c1 = {
+      type : "coffee",
+      energy : 10
+    };
+
+
+
+  </script> 
+</body>
+</html>
